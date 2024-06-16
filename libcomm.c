@@ -150,7 +150,7 @@ recv_msg(int fd, char *buf, size_t buf_len)
 
 	count = read(fd, buf, buf_len);
 	if (count < 0) {
-		error("error on write");
+		error("error on read");
 		return FALSE;
 	}
 
